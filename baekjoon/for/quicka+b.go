@@ -16,17 +16,18 @@ func main() {
 	str = strings.TrimSpace(str)
 
 	N, _ := strconv.Atoi(str)
-
+	var strTkn []string
+	
 	for i := 0; i < N; i++ {
 		str, _ = r.ReadString('\n')
 		str = strings.TrimSpace(str)
-		strTkn := strings.Split(str, " ")
-
+		strTkn = strings.Split(str, " ")
 		a, _ := strconv.Atoi(strTkn[0])
 		b, _ := strconv.Atoi(strTkn[1])
 
 		res := a + b
 		w.WriteString(strconv.Itoa(res) + "\n")
+
 	}
 
 	w.Flush()

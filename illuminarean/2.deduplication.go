@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	arr := []int{1, 1, 1, 1, 2, 3, 3, 3, 4, 5, 6, 7, 7}
+	arr := []int{1, 3, 1, 5, 6, 2, 3, 1, 4, 5, 6, 7, 8}
 	printDeduplicatedNumber(arr)
 }
 
